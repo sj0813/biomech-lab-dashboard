@@ -1,0 +1,2660 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>國家運動科學中心 (TISS) | 運動生物力學實驗室六大主力專區與空間導覽地圖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #070a11;
+      --bg-secondary: #0e1422;
+      --bg-card: rgba(16, 24, 39, 0.88);
+      --bg-card-hover: rgba(24, 36, 58, 0.98);
+      --border-color: rgba(56, 189, 248, 0.18);
+      --border-highlight: rgba(56, 189, 248, 0.65);
+      --cyan: #00f0ff;
+      --blue-accent: #0284c7;
+      --neon-gold: #fbbf24;
+      --emerald: #10b981;
+      --purple: #a855f7;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --radius: 14px;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', 'Inter', -apple-system, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(2, 132, 199, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 75%, rgba(0, 240, 255, 0.1) 0%, transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+    }
+
+    /* Top Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(7, 10, 17, 0.92);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, #0284c7, #00f0ff);
+      color: #030712;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      padding: 6px 14px;
+      border-radius: 8px;
+      letter-spacing: 1.5px;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+    }
+
+    .brand-title h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-title p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      outline: none;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #00f0ff);
+      color: #040914;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(0, 240, 255, 0.3);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 6px 25px rgba(0, 240, 255, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: rgba(30, 41, 59, 0.7);
+      color: var(--text-main);
+      border-color: var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(51, 65, 85, 0.9);
+      border-color: var(--cyan);
+      color: #ffffff;
+    }
+
+    .btn-outline-gold {
+      background: rgba(251, 191, 36, 0.12);
+      color: var(--neon-gold);
+      border-color: rgba(251, 191, 36, 0.45);
+    }
+
+    .btn-outline-gold:hover {
+      background: rgba(251, 191, 36, 0.22);
+      border-color: var(--neon-gold);
+      box-shadow: 0 0 18px rgba(251, 191, 36, 0.35);
+    }
+
+    .btn-print-area {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.25), rgba(245, 158, 11, 0.35));
+      border: 1px solid rgba(251, 191, 36, 0.85);
+      color: #fef08a;
+      font-weight: 700;
+      box-shadow: 0 0 16px rgba(251, 191, 36, 0.25);
+    }
+
+    .btn-print-area:hover {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.45), rgba(245, 158, 11, 0.55));
+      color: #ffffff;
+      border-color: #fbbf24;
+      box-shadow: 0 0 24px rgba(251, 191, 36, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.3));
+      border: 1px solid rgba(251, 191, 36, 0.65);
+      color: #fef08a;
+      font-weight: 700;
+    }
+
+    .btn-gold:hover {
+      background: rgba(251, 191, 36, 0.38);
+      color: #ffffff;
+      border-color: #fbbf24;
+      box-shadow: 0 0 16px rgba(251, 191, 36, 0.45);
+    }
+
+    /* Mode Switcher Bar */
+    .view-switcher-bar {
+      max-width: 1560px;
+      margin: 24px auto 0;
+      padding: 0 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .toggle-group {
+      display: inline-flex;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 5px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .toggle-btn {
+      padding: 9px 22px;
+      border-radius: 8px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: inherit;
+    }
+
+    .toggle-btn:hover {
+      color: #ffffff;
+    }
+
+    .toggle-btn.active {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.3), rgba(0, 240, 255, 0.2));
+      color: var(--cyan);
+      border: 1px solid var(--cyan);
+      box-shadow: 0 0 16px rgba(0, 240, 255, 0.25);
+    }
+
+    .view-indicator-tag {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .view-indicator-tag strong {
+      color: var(--cyan);
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.15rem;
+    }
+
+    main {
+      max-width: 1560px;
+      margin: 20px auto 60px;
+      padding: 0 36px;
+    }
+
+    /* Floor Map Section */
+    .map-section {
+      background: linear-gradient(180deg, rgba(14, 20, 34, 0.95), rgba(9, 13, 22, 0.95));
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .map-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .map-title svg {
+      color: var(--cyan);
+    }
+
+    .map-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 3px 8px;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .legend-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* SVG Map Styling & Interactive Toolbar */
+    .map-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding: 10px 16px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+
+    .map-toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .active-zone-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      background: rgba(2, 132, 199, 0.2);
+      border: 1px solid var(--border-highlight);
+      border-radius: 6px;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .active-zone-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 8px currentColor;
+    }
+
+    .map-title-editor-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .editor-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--cyan);
+      white-space: nowrap;
+    }
+
+    .map-title-editor-input {
+      flex: 1;
+      min-width: 140px;
+      max-width: 340px;
+      padding: 6px 12px;
+      background: rgba(7, 10, 17, 0.85);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      outline: none;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+
+    .map-title-editor-input:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.35);
+      background: rgba(7, 10, 17, 0.98);
+    }
+
+    .map-toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .map-coords-badge {
+      font-family: 'Rajdhani', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #94a3b8;
+      background: rgba(10, 14, 23, 0.7);
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      white-space: nowrap;
+    }
+
+    .btn-sm {
+      padding: 6px 12px !important;
+      font-size: 0.8rem !important;
+    }
+
+    .map-hint-banner {
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .map-hint-banner span.key-pill {
+      background: rgba(2, 132, 199, 0.25);
+      color: var(--cyan);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .svg-map-wrapper {
+      width: 100%;
+      height: auto;
+      max-height: 490px;
+      background: #060911;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8);
+      user-select: none;
+    }
+
+    svg.lab-floor-plan {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .map-zone-group {
+      cursor: grab;
+      transition: filter 0.2s ease;
+    }
+
+    .map-zone-group.dragging {
+      cursor: grabbing !important;
+    }
+
+    .map-zone-group:hover rect.zone-bg {
+      fill-opacity: 0.28 !important;
+      stroke-width: 2px !important;
+      filter: drop-shadow(0 0 10px var(--cyan));
+    }
+
+    .map-zone-group.selected rect.zone-bg {
+      stroke: var(--cyan) !important;
+      stroke-width: 2.5px !important;
+      fill-opacity: 0.26 !important;
+      filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.5));
+    }
+
+    .zone-pencil-btn {
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .zone-pencil-btn:hover {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
+    /* Resize Handles ("Squared of the area") */
+    .resize-handle {
+      fill: #00f0ff;
+      stroke: #070a11;
+      stroke-width: 1.5px;
+      transition: transform 0.1s ease, fill 0.1s ease;
+    }
+
+    .resize-handle:hover {
+      fill: #fbbf24;
+      transform: scale(1.35);
+      filter: drop-shadow(0 0 8px #fbbf24);
+    }
+
+    .resize-handle.handle-nw, .resize-handle.handle-se {
+      cursor: nwse-resize;
+    }
+
+    .resize-handle.handle-ne, .resize-handle.handle-sw {
+      cursor: nesw-resize;
+    }
+
+    /* Architectural Curtains & Flow Path Styles */
+    @keyframes flowDash {
+      to {
+        stroke-dashoffset: -20;
+      }
+    }
+    @keyframes beaconBlink {
+      0%, 100% {
+        r: 3.5;
+        opacity: 1;
+      }
+      50% {
+        r: 5.5;
+        opacity: 0.45;
+      }
+    }
+    .flow-path-line {
+      animation: flowDash 1.2s linear infinite;
+      filter: drop-shadow(0 0 5px rgba(0, 240, 255, 0.75));
+    }
+    .flow-path-highlight {
+      stroke: #34d399 !important;
+      stroke-width: 3.8px !important;
+      filter: drop-shadow(0 0 12px #34d399) !important;
+    }
+    .entrance-arrow-key {
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .entrance-arrow-key:hover {
+      transform: translateY(-2px);
+      filter: drop-shadow(0 0 14px rgba(52, 211, 153, 0.95)) !important;
+    }
+    .pulse-beacon {
+      animation: beaconBlink 1.8s ease-in-out infinite;
+    }
+    .curtain-pleat-fold {
+      filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.45));
+    }
+
+    /* Cards Grid */
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* Card Item */
+    .area-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .area-card:hover {
+      border-color: var(--border-highlight);
+      box-shadow: 0 12px 40px rgba(0, 240, 255, 0.14);
+      transform: translateY(-2px);
+    }
+
+    .area-card.highlighted {
+      border-color: var(--cyan) !important;
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.4) !important;
+      transform: scale(1.005);
+    }
+
+    /* Left: Media Area */
+    .card-media {
+      position: relative;
+      background: #04070d;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-color);
+      min-height: 360px;
+    }
+
+    .media-hero-img-wrap {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .media-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .area-card:hover .media-hero-img {
+      transform: scale(1.03);
+    }
+
+    .media-overlay-zone {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(7, 10, 17, 0.9);
+      border: 1px solid var(--border-highlight);
+      backdrop-filter: blur(8px);
+      padding: 5px 12px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .media-zone-code {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 800;
+      color: var(--cyan);
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+    }
+
+    .media-location-tag {
+      font-size: 0.72rem;
+      background: rgba(2, 132, 199, 0.3);
+      color: #bae6fd;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .media-thumbnails-strip {
+      display: flex;
+      gap: 6px;
+      padding: 8px 12px;
+      background: rgba(10, 14, 23, 0.9);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+    }
+
+    .thumb-item {
+      width: 62px;
+      height: 44px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      cursor: pointer;
+      opacity: 0.65;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .thumb-item:hover, .thumb-item.active {
+      opacity: 1;
+      border-color: var(--cyan);
+      box-shadow: 0 0 8px var(--cyan);
+    }
+
+    .thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Right: Details & Inputs */
+    .card-content {
+      padding: 26px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .card-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .title-edit-container {
+      width: 100%;
+      flex: 1;
+    }
+
+    .editable-label {
+      font-size: 0.72rem;
+      color: var(--cyan);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .input-title-zh {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.35;
+      padding: 8px 14px;
+      font-family: inherit;
+      transition: var(--transition);
+      margin-bottom: 8px;
+      resize: none;
+      min-height: 64px;
+      box-sizing: border-box;
+      display: block;
+      word-break: break-word;
+      overflow-y: hidden;
+      white-space: pre-wrap;
+    }
+
+    .input-title-zh:focus {
+      outline: none;
+      border-color: var(--cyan);
+      background: rgba(15, 23, 42, 0.95);
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    }
+
+    .input-title-en {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      color: #94a3b8;
+      font-size: 0.88rem;
+      font-family: 'Rajdhani', 'Inter', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 6px 12px;
+      transition: var(--transition);
+    }
+
+    .input-title-en:focus {
+      outline: none;
+      border-color: var(--border-highlight);
+      color: #ffffff;
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .btn-sign-print {
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.25));
+      border: 1px solid rgba(251, 191, 36, 0.5);
+      color: #fde68a;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-sign-print:hover {
+      background: rgba(251, 191, 36, 0.35);
+      color: #ffffff;
+      border-color: var(--neon-gold);
+      box-shadow: 0 0 16px rgba(251, 191, 36, 0.35);
+    }
+
+    /* Vision Block */
+    .detail-block {
+      background: rgba(15, 23, 42, 0.45);
+      border-radius: 8px;
+      padding: 14px 18px;
+      border-left: 3px solid var(--cyan);
+    }
+
+    .detail-block-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--cyan);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .textarea-vision {
+      width: 100%;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      color: #e2e8f0;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      font-family: inherit;
+      resize: vertical;
+      min-height: 62px;
+      transition: var(--transition);
+      padding: 4px;
+    }
+
+    .textarea-vision:hover {
+      border-color: rgba(255, 255, 255, 0.1);
+      background: rgba(10, 14, 23, 0.4);
+    }
+
+    .textarea-vision:focus {
+      outline: none;
+      border-color: var(--cyan);
+      background: rgba(10, 14, 23, 0.85);
+      box-shadow: 0 0 12px rgba(0, 240, 255, 0.15);
+    }
+
+    /* Equipment and Specs */
+    .equipment-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .spec-box {
+      background: rgba(10, 14, 23, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+
+    .spec-header {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .input-spec-text {
+      width: 100%;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: #cbd5e1;
+      font-size: 0.86rem;
+      font-family: inherit;
+      padding: 4px 6px;
+      transition: var(--transition);
+    }
+
+    .input-spec-text:hover {
+      border-color: rgba(255, 255, 255, 0.1);
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    .input-spec-text:focus {
+      outline: none;
+      border-color: var(--border-highlight);
+      background: rgba(15, 23, 42, 0.9);
+      color: #ffffff;
+    }
+
+    /* Sub-Station Tag Pills for 6 Major Zones */
+    .substations-pills {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.75rem;
+    }
+
+    .substations-label {
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    .substation-badge {
+      background: rgba(2, 132, 199, 0.2);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #7dd3fc;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Card Footer Meta */
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+
+    .save-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #10b981;
+      font-size: 0.75rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .save-indicator.show {
+      opacity: 1;
+    }
+
+    /* Zoom Modal */
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .image-modal.active {
+      display: flex;
+    }
+
+    .image-modal img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 8px;
+      border: 1px solid var(--border-highlight);
+      box-shadow: 0 0 50px rgba(0, 240, 255, 0.3);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 2.2rem;
+      cursor: pointer;
+    }
+
+    /* PRINT STYLES - HANGING SIGNS SPEC */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        background-image: none !important;
+      }
+
+      header, .view-switcher-bar, .map-section, .btn-sign-print, .media-thumbnails-strip, .card-footer, .editable-label, .modal-close-btn {
+        display: none !important;
+      }
+
+      main {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .grid-container {
+        display: block !important;
+      }
+
+      .area-card {
+        page-break-after: always;
+        break-after: page;
+        margin: 0 !important;
+        padding: 24mm 18mm 18mm 18mm !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+      }
+
+      /* Outer Frame for acrylic hanging sign */
+      .area-card::before {
+        content: '';
+        position: absolute;
+        top: 10mm;
+        left: 12mm;
+        right: 12mm;
+        bottom: 12mm;
+        border: 3.5px solid #0f172a;
+        pointer-events: none;
+      }
+
+      .card-media {
+        border: 2px solid #0f172a !important;
+        max-height: 38vh !important;
+        min-height: auto !important;
+        margin-bottom: 16px !important;
+        border-radius: 6px !important;
+      }
+
+      .media-hero-img-wrap {
+        max-height: 38vh !important;
+      }
+
+      .media-hero-img {
+        max-height: 38vh !important;
+        object-fit: cover !important;
+      }
+
+      .media-overlay-zone {
+        background: #0f172a !important;
+        color: #ffffff !important;
+        border: none !important;
+        top: 8px !important;
+        left: 8px !important;
+      }
+
+      .media-zone-code {
+        color: #ffffff !important;
+        font-size: 1.5rem !important;
+      }
+
+      .media-location-tag {
+        background: #38bdf8 !important;
+        color: #0f172a !important;
+        font-weight: 800 !important;
+      }
+
+      .card-content {
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 14px !important;
+      }
+
+      .input-title-zh {
+        border: none !important;
+        background: transparent !important;
+        color: #0f172a !important;
+        font-size: 2.1rem !important;
+        font-weight: 900 !important;
+        line-height: 1.25 !important;
+        padding: 0 !important;
+        margin-bottom: 4px !important;
+        height: auto !important;
+        min-height: auto !important;
+        resize: none !important;
+        overflow: visible !important;
+        white-space: pre-wrap !important;
+        word-break: break-word !important;
+      }
+
+      .input-title-en {
+        border: none !important;
+        background: transparent !important;
+        color: #475569 !important;
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+        padding: 0 !important;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+      }
+
+      .detail-block {
+        background: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        border-left: 6px solid #0284c7 !important;
+        padding: 10px 14px !important;
+      }
+
+      .detail-block-title {
+        color: #0369a1 !important;
+        font-size: 0.95rem !important;
+        font-weight: 800 !important;
+      }
+
+      .textarea-vision {
+        border: none !important;
+        color: #1e293b !important;
+        font-size: 1.05rem !important;
+        line-height: 1.6 !important;
+        padding: 0 !important;
+      }
+
+      .spec-box {
+        background: #f1f5f9 !important;
+        border: 1px solid #cbd5e1 !important;
+        padding: 8px 12px !important;
+      }
+
+      .spec-header {
+        color: #475569 !important;
+        font-weight: 700 !important;
+      }
+
+      .input-spec-text {
+        color: #0f172a !important;
+        font-size: 0.95rem !important;
+        font-weight: 700 !important;
+        padding: 0 !important;
+      }
+
+      .print-sign-header {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #0f172a;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+      }
+
+      .print-sign-header h3 {
+        font-size: 1.15rem;
+        font-weight: 800;
+        color: #0f172a;
+      }
+
+      .print-sign-header span {
+        font-size: 0.85rem;
+        color: #64748b;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    .print-sign-header {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="brand-group">
+      <div class="brand-badge">TISS · BIOMECH</div>
+      <div class="brand-title">
+        <h1>國家運動科學中心 · 運動生物力學實驗室</h1>
+        <p>FUNCTIONAL TESTING & BIOMECHANICAL RESEARCH FACILITY</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-secondary" onclick="resetToDefaults()" title="恢復原始推薦配置">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+        還原建議
+      </button>
+      <button class="btn btn-secondary" onclick="exportDataJSON()" title="匯出當前自訂設定檔">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        匯出設定
+      </button>
+      <button class="btn btn-print-area" id="headerPrintAreaBtn" onclick="printSingleArea(activeAreaId)" title="列印當前選中專區之實體展示標示牌">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        列印選取專區標示牌 (<span id="headerActiveCode">ZONE-A</span>)
+      </button>
+      <button class="btn btn-outline-gold" onclick="window.print()" title="一鍵列印當前視角的所有實體標示牌">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        一鍵列印全區掛牌
+      </button>
+    </div>
+  </header>
+
+  <!-- View Switcher & Indicator -->
+  <div class="view-switcher-bar">
+    <div class="toggle-group">
+      <button class="toggle-btn active" id="btnMode6" onclick="switchViewMode('6zones')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        六大主力測試專區視角 (6 Major Core Zones)
+      </button>
+      <button class="toggle-btn" id="btnMode15" onclick="switchViewMode('15stations')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        15 個細部檢測站點視角 (15 Detailed Stations)
+      </button>
+    </div>
+
+    <div class="view-indicator-tag">
+      <span>當前檢視：<strong id="modeLabelText">6 大主力專區</strong></span>
+      <span>· 點擊地圖區塊可直達對應專區</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Spatial Layout / Interactive Floor Plan Section -->
+    <section class="map-section">
+      <div class="map-header">
+        <div class="map-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          實驗室空間位置分佈與互動導覽地圖 (Interactive Spatial Floor Map)
+        </div>
+        <div class="map-legend" id="mapLegendContainer">
+          <!-- Dynamically populated legend items -->
+        </div>
+      </div>
+
+      <!-- Interactive Map Toolbar: Name Editing, Coords, Drag/Resize Status -->
+      <div class="map-toolbar">
+        <div class="map-toolbar-left">
+          <div class="active-zone-badge" id="mapActiveBadge">
+            <span class="active-zone-dot" id="mapActiveDot" style="background:#00f0ff;"></span>
+            <strong id="mapActiveCode">ZONE-A</strong>
+          </div>
+          <div class="map-title-editor-wrap">
+            <span class="editor-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:text-bottom; margin-right:2px;"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              區域名稱 (雙向連動)：
+            </span>
+            <input type="text" id="mapActiveTitleInput" class="map-title-editor-input" 
+              placeholder="在此修改選中專區名稱，即時連動下方卡片..." 
+              oninput="onMapTitleEditorInput(this.value)">
+          </div>
+        </div>
+
+        <div class="map-toolbar-right">
+          <div class="map-coords-badge" id="mapCoordsBadge">
+            X: 285 · Y: 105 | 390 × 295 px
+          </div>
+          <button class="btn btn-gold btn-sm" onclick="printSingleArea(activeAreaId)" title="立即列印當前選中專區之實體展示掛牌標示">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            列印此區標示牌 (<span id="toolbarActiveCode">ZONE-A</span>)
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="scrollToCard(activeAreaId)" title="平滑捲動至下方對應之規格卡片">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+            定位至圖卡
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="resetMapCoordinates()" title="將所有專區位置與尺寸還原至預設配置">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            重設地圖佈局
+          </button>
+        </div>
+      </div>
+
+      <!-- SVG Floor Plan -->
+      <div class="svg-map-wrapper">
+        <svg id="labFloorPlanSvg" class="lab-floor-plan" viewBox="0 0 1000 450">
+          <defs>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+            </pattern>
+            <!-- Marker Arrow Cyan -->
+            <marker id="arrowCyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#00f0ff"/>
+            </marker>
+            <!-- Marker Arrow Green -->
+            <marker id="arrowGreen" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399"/>
+            </marker>
+            <!-- Curtain Glow Filter -->
+            <filter id="curtainGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3.5" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+            <!-- Entrance Key Gradient -->
+            <linearGradient id="entranceKeyGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#059669"/>
+              <stop offset="50%" stop-color="#047857"/>
+              <stop offset="100%" stop-color="#0284c7"/>
+            </linearGradient>
+            <!-- Curtains Fabric Pattern/Gradient -->
+            <linearGradient id="curtainFabricGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#34d399" stop-opacity="0.85"/>
+              <stop offset="40%" stop-color="#059669" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#064e3b" stop-opacity="0.9"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Background Grid & Outer Boundary -->
+          <rect width="1000" height="450" fill="#070b14"/>
+          <rect width="1000" height="450" fill="url(#grid)"/>
+          <rect x="15" y="15" width="970" height="420" rx="8" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2"/>
+
+          <!-- Architectural Compass Rose (空間座向方位羅盤: 正南為入口側，正北為後方牆面) -->
+          <g id="compassRoseGroup" transform="translate(56, 38)" pointer-events="none">
+            <circle cx="0" cy="0" r="16" fill="rgba(7, 10, 17, 0.88)" stroke="#38bdf8" stroke-width="1.2"/>
+            <polygon points="0,-13 3,0 -3,0" fill="#00f0ff"/>
+            <polygon points="0,13 3,0 -3,0" fill="#475569"/>
+            <polygon points="-13,0 0,3 0,-3" fill="#475569"/>
+            <polygon points="13,0 0,3 0,-3" fill="#475569"/>
+            <text x="0" y="-16" fill="#00f0ff" font-size="7.5" font-family="'Rajdhani', sans-serif" font-weight="800" text-anchor="middle">北 N</text>
+            <text x="0" y="23" fill="#94a3b8" font-size="7.5" font-family="'Rajdhani', sans-serif" font-weight="700" text-anchor="middle">南 S (入口)</text>
+            <text x="-16" y="2.5" fill="#94a3b8" font-size="7.5" font-family="'Rajdhani', sans-serif" font-weight="700" text-anchor="end">西 W</text>
+            <text x="16" y="2.5" fill="#94a3b8" font-size="7.5" font-family="'Rajdhani', sans-serif" font-weight="700" text-anchor="start">東 E</text>
+          </g>
+
+          <!-- Wall Boundaries & Architectural Landmarks -->
+          <!-- Top Wall: North Wall (北側混凝土牆面) -->
+          <rect x="15" y="15" width="970" height="18" fill="rgba(148, 163, 184, 0.25)"/>
+          <text x="500" y="28" fill="#94a3b8" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="2">
+            ▲ 正北牆面 (NORTH WALL) · 生物力學解剖圖表 · 數據伺服器庫 · 科研解算中樞
+          </text>
+
+          <!-- Left Boundary: West Wing (西側挑高動捕試驗區) -->
+          <line x1="15" y1="435" x2="410" y2="435" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2"/>
+          <text x="215" y="430" fill="rgba(148, 163, 184, 0.55)" font-size="9" font-weight="600" text-anchor="middle">
+            ◄ 正西側 (WEST) · 挑高動捕試驗區 (3D Motion Arena)
+          </text>
+
+          <!-- Interior Partition Green Curtains (場地分隔長簾) running vertically beside Zone A -->
+          <g id="dividerCurtainsLayer" pointer-events="none">
+            <path d="M 412 45 Q 417 65 412 85 Q 407 105 412 125 Q 417 145 412 165 Q 407 185 412 205 Q 417 225 412 245 Q 407 265 412 285 Q 417 305 412 325 Q 407 345 412 365 Q 417 385 412 405 L 412 420"
+              stroke="#34d399" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.8" />
+            <text x="408" y="235" fill="#6ee7b7" font-size="9" font-weight="600" text-anchor="middle" transform="rotate(-90 408 235)" letter-spacing="2">
+              ▲ 場地隔音遮光分隔長簾 (DIVIDER CURTAINS)
+            </text>
+          </g>
+
+          <!-- Entrance Access Path (入口導引動線) Flowing into the Lab -->
+          <g id="entrancePathLayer" pointer-events="none">
+            <!-- Central Trunk Path -->
+            <path id="pathMainTrunk" class="flow-path-line" d="M 540 435 L 540 330" fill="none" stroke="#00f0ff" stroke-width="2.6" stroke-dasharray="6 4" marker-end="url(#arrowCyan)"/>
+            <!-- Branch Left to Zone A -->
+            <path id="pathBranchA" class="flow-path-line" d="M 540 330 Q 540 270 420 270" fill="none" stroke="#00f0ff" stroke-width="2.2" stroke-dasharray="5 3" marker-end="url(#arrowCyan)"/>
+            <!-- Branch Forward to Zone C & Zone F -->
+            <path id="pathBranchCF" class="flow-path-line" d="M 540 330 L 540 160" fill="none" stroke="#00f0ff" stroke-width="2.2" stroke-dasharray="5 3" marker-end="url(#arrowCyan)"/>
+            <!-- Branch Right to Zone B & Zone D -->
+            <path id="pathBranchBD" class="flow-path-line" d="M 540 330 Q 540 280 655 280" fill="none" stroke="#00f0ff" stroke-width="2.2" stroke-dasharray="5 3" marker-end="url(#arrowCyan)"/>
+            <!-- Path Text Badge -->
+            <g transform="translate(548, 350)">
+              <rect x="0" y="-12" width="135" height="17" rx="3" fill="rgba(7, 10, 17, 0.85)" stroke="rgba(0, 240, 255, 0.4)" stroke-width="1"/>
+              <text x="6" y="0" fill="#38bdf8" font-size="8.5" font-weight="700">受試與參訪主動線 ➔</text>
+            </g>
+          </g>
+
+          <!-- Prominent Entrance Curtains (入口隔簾) at the central entrance portal -->
+          <g id="entranceCurtainsGroup" class="curtain-pleat-fold">
+            <!-- Curtain Top Structural Track / Rod -->
+            <rect x="418" y="425" width="244" height="4" rx="2" fill="#334155" stroke="#64748b" stroke-width="1"/>
+            <circle cx="418" cy="427" r="4.5" fill="#94a3b8"/>
+            <circle cx="662" cy="427" r="4.5" fill="#94a3b8"/>
+
+            <!-- Left Curtain Panel (Pleated Accordion Folds) -->
+            <path d="M 420 427 Q 425 439 430 427 Q 435 415 440 427 Q 445 439 450 427 Q 455 415 460 427 Q 465 439 470 427 Q 475 415 478 427 L 478 440 L 420 440 Z"
+              fill="url(#curtainFabricGrad)" stroke="#34d399" stroke-width="2" filter="url(#curtainGlow)"/>
+            
+            <!-- Right Curtain Panel (Pleated Accordion Folds) -->
+            <path d="M 602 427 Q 606 439 610 427 Q 614 415 618 427 Q 622 439 626 427 Q 630 415 634 427 Q 638 439 642 427 Q 646 415 650 427 Q 654 439 658 427 L 658 440 L 602 440 Z"
+              fill="url(#curtainFabricGrad)" stroke="#34d399" stroke-width="2" filter="url(#curtainGlow)"/>
+
+            <!-- Valance Arch Across the Entryway -->
+            <path d="M 478 427 Q 508 433 540 427 Q 572 433 602 427" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+            <!-- Prominent Floating Label Banner for Entrance Curtains -->
+            <g class="curtain-label-badge" pointer-events="none" transform="translate(452, 403)">
+              <rect width="176" height="20" rx="4" fill="rgba(6, 78, 59, 0.92)" stroke="#10b981" stroke-width="1.3" filter="url(#curtainGlow)"/>
+              <circle cx="12" cy="10" r="3.5" fill="#34d399" class="pulse-beacon"/>
+              <text x="96" y="14" fill="#a7f3d0" font-size="10" font-weight="700" text-anchor="middle">
+                ▼ 正南側入口隔簾 (SOUTH - Entrance Curtains)
+              </text>
+            </g>
+          </g>
+
+          <!-- ENTRANCE ARROW KEY (Interactive Directional Button & Path Indicator) -->
+          <g class="entrance-arrow-key" id="entranceArrowKey" onclick="highlightEntrancePath()" transform="translate(460, 427)">
+            <!-- Pill Key Body -->
+            <rect width="160" height="24" rx="12" fill="url(#entranceKeyGrad)" stroke="#34d399" stroke-width="1.8" filter="url(#curtainGlow)"/>
+            <!-- Pulsing Beacon Dot -->
+            <circle cx="16" cy="12" r="4.5" fill="#ffffff" class="pulse-beacon"/>
+            <!-- Directional Arrow SVG -->
+            <path d="M 32 15 L 37 8 L 42 15 M 37 9 L 37 17" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Text Label -->
+            <text x="96" y="16" fill="#ffffff" font-size="10" font-family="'Rajdhani', 'Noto Sans TC', sans-serif" font-weight="800" letter-spacing="0.5" text-anchor="middle">
+              ▲ 正南側入口動線 (SOUTH ENTRANCE)
+            </text>
+          </g>
+
+          <!-- Bottom Right: Windows & Daylight Curtains -->
+          <g id="windowBlindsGroup">
+            <line x1="665" y1="435" x2="980" y2="435" stroke="rgba(56, 189, 248, 0.5)" stroke-width="4" stroke-dasharray="10 5"/>
+            <text x="822" y="426" fill="#38bdf8" font-size="10.5" font-weight="600" text-anchor="middle">
+              ► 正東側採光窗簾側 (EAST - Windows & Blinds)
+            </text>
+          </g>
+
+          <!-- Dynamic Zones Layer -->
+          <g id="mapZonesLayer"></g>
+
+          <!-- Dynamic Resize Handles & Selection Layer -->
+          <g id="mapHandlesLayer"></g>
+        </svg>
+      </div>
+
+      <!-- Hint Banner -->
+      <div class="map-hint-banner">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <span>
+          <strong>排版指南：</strong> 點按或按住區塊本體可 <span class="key-pill">任意拖曳移動</span> · 按住選中區塊 4 個角落的方形手柄 (■) 可 <span class="key-pill">自由縮放尺寸</span> · 點擊區塊或直接修改上方名稱，立即 <span class="key-pill">雙向即時連動</span> 下方圖表標題！
+        </span>
+      </div>
+    </section>
+
+    <!-- Cards Container -->
+    <div class="grid-container" id="cardsGrid">
+      <!-- Dynamic Rendering via JS -->
+    </div>
+  </main>
+
+  <!-- Image Zoom Modal -->
+  <div class="image-modal" id="imageModal" onclick="closeImageModal()">
+    <button class="modal-close-btn" onclick="closeImageModal()">&times;</button>
+    <img id="modalImg" src="" alt="Zoomed view" onclick="event.stopPropagation()">
+  </div>
+
+  <script>
+    // 6 Consolidated Major Core Zones Configuration (Clockwise Order: A -> B -> C -> D -> E -> F)
+    const SIX_MAJOR_ZONES = [
+      {
+        id: "zone-a",
+        code: "ZONE-A",
+        color: "#00f0ff",
+        locationTag: "西側（入口左側挑高動捕區）",
+        mapCoords: { x: 35, y: 45, width: 375, height: 371 },
+        heroImage: "20261020_143047.jpg",
+        images: ["20261020_143047.jpg", "20261020_143051.jpg"],
+        substationIds: ["ZONE-05", "ZONE-06"],
+        titleZh: "3D 高速光學動作捕捉與地面動力學測試評估區",
+        titleEn: "3D OPTICAL MOTION CAPTURE & GROUND DYNAMICS ASSESSMENT ZONE",
+        vision: "國家運動科學中心最高規格生物力學核心。採用大跨度鋁合金桁架系統，四周懸吊多角度高幀率紅外線光學相機，毫秒級重構人體空間六自由度運動學軌跡，並同步嵌入式 AMTI 多軸測力板與 BenQ 即時力學大螢幕，深度解析選手全身關節受力與動力鏈傳遞。",
+        equipment: "大跨度 3D 鋁合金桁架、高速紅外光學動作捕捉攝影機群、埋入式 AMTI 測力板、BenQ 互動可視化看板、安全防護天網",
+        targetMetrics: "全身六自由度關節角度、地面反作用力 (GRF 三軸分力)、關節力矩與功率、即時視覺力學生物回饋延遲 (<5ms)"
+      },
+      {
+        id: "zone-b",
+        code: "ZONE-B",
+        color: "#f59e0b",
+        locationTag: "北側中央區（入口正前方）",
+        mapCoords: { x: 415, y: 45, width: 157, height: 91 },
+        heroImage: "20261020_143041.jpg",
+        images: ["20261020_143041.jpg", "20261020_143055.jpg"],
+        substationIds: ["ZONE-04", "ZONE-07"],
+        titleZh: "等速多關節神經肌肉功能評估區",
+        titleEn: "ISOKINETIC MULTI-JOINT NEUROMUSCULAR ASSESSMENT ZONE",
+        vision: "國際運動生物力學公認肌力檢測黃金標準。配備 Biodex System 4 Pro，精準量測膝、踝、肩、髖各關節同心/離心收縮下的極限峰值力矩（Peak Torque）與雙側對稱平衡比（H/Q ratio）；並配置重型不鏽鋼精密設備轉運車，支援國家隊於集訓或賽事場域之快速移地部署檢測。",
+        equipment: "Biodex System 4 Pro 多關節等速肌力儀、肢體角度固定模組、三組重型不鏽鋼精密儀器車、行動防震攜行箱",
+        targetMetrics: "關節峰值力矩 (Nm)、達峰時間 (ms)、屈伸肌力比 (H/Q Ratio)、總作功量與爆發力疲勞指數"
+      },
+      {
+        id: "zone-c",
+        code: "ZONE-C",
+        color: "#38bdf8",
+        locationTag: "東北側科研區（北牆工作站席）",
+        mapCoords: { x: 575, y: 45, width: 241, height: 67 },
+        heroImage: "20261020_143210.jpg",
+        images: ["20261020_143035.jpg", "20261020_143157.jpg", "20261020_143210.jpg", "20261020_143216.jpg"],
+        substationIds: ["ZONE-03", "ZONE-13", "ZONE-14", "ZONE-15"],
+        titleZh: "運動生物力學大數據解算與科研創新區",
+        titleEn: "BIOMECHANICS BIG DATA & SPORTS TECH INNOVATION ZONE",
+        vision: "運動科研數據解算大腦與分析中樞。配置 Supermicro 高性能運算伺服器與多螢幕專業工作站，對多通道 EMG、IMU、高速影像與測力板三維動力學訊號執行逆動力學解算與特徵提取，為國家隊教練與選手提供嚴謹且精準量化之生物力學科研分析報告。",
+        equipment: "Supermicro 高性能運算伺服器、雙螢幕科研解算席、AMTI 核心動力學硬體庫、專業生物力學解算軟體套件、人體肌群脊椎解剖圖表與教學模型",
+        targetMetrics: "多源感知數據時間對齊精度 (<1ms)、逆向動力學模型擬合度、運動特徵自動辨識率 (>95%)、科研檢測報表產出時效"
+      },
+      {
+        id: "zone-d",
+        code: "ZONE-D",
+        color: "#ec4899",
+        locationTag: "東北隅自研工坊（東側靠北端）",
+        mapCoords: { x: 820, y: 45, width: 158, height: 131 },
+        heroImage: "20261020_143125.jpg",
+        images: ["20261020_143125.jpg", "20261020_143144.jpg", "20261020_143148.jpg"],
+        substationIds: ["ZONE-10", "ZONE-11", "ZONE-12"],
+        titleZh: "智慧感測器雛型自製工坊區",
+        titleEn: "SMART SENSOR PROTOTYPING & MAKER ZONE",
+        vision: "運動科技穿戴感測器與硬體自研核心。配置封閉式高速多色 3D 列印機、精密電子維修組裝工作台，即時為選手與國家隊科研專案快速打樣客製化感測器夾具、輕量化支架、穿戴外殼與生醫輔具。由此自研工坊向西南廣角眺望全實驗室長縱深與動態試驗區。",
+        equipment: "Bambu Lab 封閉式高速 3D 列印機 (AMS 多色供料)、自研工坊全景視野工作站、精密電子檢修工作台、感測器模組治具套件",
+        targetMetrics: "客製治具快速成型週期 (<4小時)、穿戴輕量化指數 (<30g)、材料拉伸韌性與抗衝擊強度、雛型打樣成功率"
+      },
+      {
+        id: "zone-e",
+        code: "ZONE-E",
+        color: "#8b5cf6",
+        locationTag: "東南側評估區（東側窗邊獨立區）",
+        mapCoords: { x: 765, y: 275, width: 205, height: 138 },
+        heroImage: "20261020_143115.jpg",
+        images: ["20261020_143105.jpg", "20261020_143115.jpg"],
+        substationIds: ["ZONE-08", "ZONE-09"],
+        titleZh: "運動表現足部功能評估區",
+        titleEn: "SPORTS PERFORMANCE & FOOT FUNCTION ASSESSMENT ZONE",
+        vision: "整合運動防護臨床評估與德國 Novel pedar® 鞋內高頻足底壓力分佈感測系統。在安靜隱蔽空間評估關節活動度（ROM）、軟組織張力與下肢力線（Q-Angle），並結合真實專項運動靴內動態足壓矩陣量測，精準捕捉著地衝擊峰值與壓力中心（COP）軌跡，連線 Materialise 數位系統規劃個人化矯正鞋墊與足部功能強化方案。",
+        equipment: "德國 Novel pedar® 鞋內足底壓力感測系統、專業物理治療檢查評估床、醫療級折疊隔音屏風、Materialise 3D 矯形系統、數位下肢角度測量儀",
+        targetMetrics: "足底動態峰值壓力 (kPa)、動態壓力中心 (COP) 軌跡、著地/推進期時空比、下肢力線對齊角度、關節活動度 (ROM)"
+      },
+      {
+        id: "zone-f",
+        code: "ZONE-F",
+        color: "#10b981",
+        locationTag: "南側步態區（入口右側旁）",
+        mapCoords: { x: 665, y: 260, width: 75, height: 159 },
+        heroImage: "20261020_143031.jpg",
+        images: ["20261020_143031.jpg"],
+        substationIds: ["ZONE-01", "ZONE-02"],
+        titleZh: "智能減重步態與神經復健運動機能區",
+        titleEn: "INTELLIGENT UNWEIGHTING GAIT & REHABILITATION ZONE",
+        vision: "德國 h/p/cosmos 專業研究級跑步機整合 Airwalk 氣壓動態懸吊減重天車系統。為亞奧運選手術後或下肢傷害早期復健提供無跌倒風險之精準減重步態重建、高速極限跑姿對稱性診斷與跑步經濟性生物力學分析。",
+        equipment: "h/p/cosmos 專業研究級跑台、Airwalk 氣壓動態懸吊減重拱架、全身防墜安全吊帶組、高頻步態影像分析模組",
+        targetMetrics: "動態懸吊減重比例調控、雙側步態對稱性指數、著地衝擊峰值、跑步垂直質心震盪與步態經濟性"
+      }
+    ];
+
+    // 15 Detailed Stations Configuration with Map Coordinates & Colors
+    const FIFTEEN_STATIONS = [
+      {
+        id: "zone-01",
+        code: "ZONE-01",
+        color: "#10b981",
+        locationTag: "南側入口東翼",
+        mapCoords: { x: 35, y: 200, width: 110, height: 195 },
+        heroImage: "20261020_143031.jpg",
+        images: ["20261020_143031.jpg"],
+        substationIds: ["ZONE-01"],
+        titleZh: "氣壓動態懸吊減重步態重建工作站",
+        titleEn: "DYNAMIC UNWEIGHTING GAIT REHABILITATION STATION",
+        vision: "整合德國 h/p/cosmos 專業跑台與 Airwalk 氣壓懸吊減重天車系統，為亞奧運選手術後或下肢傷害早期提供精準減重步態重建、跑姿修正與安全防墜保護。",
+        equipment: "h/p/cosmos 專業研究級跑步機、Airwalk 氣壓懸吊減重拱架、全身防墜吊帶組",
+        targetMetrics: "精準減重比例調控、雙側步態對稱性、下肢著地衝擊峰值"
+      },
+      {
+        id: "zone-02",
+        code: "ZONE-02",
+        color: "#10b981",
+        locationTag: "南側懸吊跑台區",
+        mapCoords: { x: 155, y: 200, width: 110, height: 195 },
+        heroImage: "20261020_143031.jpg",
+        images: ["20261020_143031.jpg"],
+        substationIds: ["ZONE-02"],
+        titleZh: "高階動態懸吊減重步態分析工作站",
+        titleEn: "DYNAMIC UNWEIGHTING GAIT BIOMECHANICS STATION",
+        vision: "整合德國研究級跑步機與天車懸吊拱架，針對長跑與競走選手執行高配速極限步態試驗，在零跌倒風險防護下，剖析疲勞狀態下的動作代償與跑步經濟性。",
+        equipment: "h/p/cosmos 專業研究級跑步機、Airwalk 懸吊減重拱架、安全防墜胸背帶",
+        targetMetrics: "高速跑姿時空參數、垂直質心位移、下肢關節角速度變化率"
+      },
+      {
+        id: "zone-03",
+        code: "ZONE-03",
+        color: "#38bdf8",
+        locationTag: "北側混凝土牆面",
+        mapCoords: { x: 250, y: 45, width: 115, height: 52 },
+        heroImage: "20261020_143035.jpg",
+        images: ["20261020_143035.jpg"],
+        substationIds: ["ZONE-03"],
+        titleZh: "運動解剖機能與神經肌肉動力鏈研究席",
+        titleEn: "FUNCTIONAL ANATOMY & NEUROMUSCULAR KINETIC CHAIN LAB",
+        vision: "以結構解剖學與機能學為基礎，連結骨骼、肌群與韌帶的三維解剖幾何，為國家隊選手與教練提供運動傷害受力機制解析與動作力鏈衛教展示。",
+        equipment: "全身等身解剖骨架、三維肌群神經分佈模型、人體關節韌帶力學展示具",
+        targetMetrics: "動力鏈傳導效率、解剖軸線對齊度、肌腱附著點受力分佈分析"
+      },
+      {
+        id: "zone-04",
+        code: "ZONE-04",
+        color: "#f59e0b",
+        locationTag: "北側中央等速區",
+        mapCoords: { x: 840, y: 215, width: 130, height: 185 },
+        heroImage: "20261020_143041.jpg",
+        images: ["20261020_143041.jpg"],
+        substationIds: ["ZONE-04"],
+        titleZh: "等速多關節神經肌肉功能評估區",
+        titleEn: "ISOKINETIC MULTI-JOINT NEUROMUSCULAR ASSESSMENT ZONE",
+        vision: "國際肌力測試黃金標準。定量量測膝、踝、肩、髖各關節峰值力矩（Peak Torque），建構選手肌力對稱性、屈伸肌比（H/Q ratio）及爆發力耐疲勞模型。",
+        equipment: "Biodex System 4 Pro 多關節等速肌力測試儀、雙側肢體固定模組、實時測力推車",
+        targetMetrics: "峰值力矩 (Nm)、達峰時間 (ms)、屈伸肌力比值、總作功量與疲勞指數"
+      },
+      {
+        id: "zone-05",
+        code: "ZONE-05",
+        color: "#00f0ff",
+        locationTag: "西側動捕主場地",
+        mapCoords: { x: 285, y: 105, width: 390, height: 150 },
+        heroImage: "20261020_143047.jpg",
+        images: ["20261020_143047.jpg"],
+        substationIds: ["ZONE-05"],
+        titleZh: "3D 高速光學動作捕捉與地面動力學測試評估區",
+        titleEn: "3D OPTICAL MOTION CAPTURE & GROUND DYNAMICS ASSESSMENT ZONE",
+        vision: "國家隊最高規格生物力學實驗空間。採用大跨度桁架系統，四周懸吊多角度高幀率紅外線相機，重構人體空間毫秒級運動學軌跡，並毫秒同步地表三軸反作用力。",
+        equipment: "鋁合金 3D 桁架系統、高速紅外光學攝影機群、埋入式 AMTI 測力板、BenQ 互動監控看板",
+        targetMetrics: "全身六自由度關節角度、地面反作用力向量 (GRF)、關節力矩與關節功率"
+      },
+      {
+        id: "zone-06",
+        code: "ZONE-06",
+        color: "#00f0ff",
+        locationTag: "西側動捕側翼標定席",
+        mapCoords: { x: 320, y: 265, width: 320, height: 70 },
+        heroImage: "20261020_143051.jpg",
+        images: ["20261020_143051.jpg"],
+        substationIds: ["ZONE-06"],
+        titleZh: "生物力學標定與即時視覺力學回饋站",
+        titleEn: "BIOMECHANICAL MARKER CALIBRATION & BIOFEEDBACK STATION",
+        vision: "受試選手專屬檢測整備區。由專業運科人員進行骨性解剖標籤（Bony Landmarks）黏貼，並連線大螢幕提供動作視覺力學即時回饋，輔助選手建立正確動作體感。",
+        equipment: "人因工學標定長桌、人體骨骼解剖參照具、移動式大螢幕中繼電控車、校正標定棒組",
+        targetMetrics: "標記點重構精度 (<0.3mm)、人體力學模型匹配度、即時反饋延遲率"
+      },
+      {
+        id: "zone-07",
+        code: "ZONE-07",
+        color: "#f59e0b",
+        locationTag: "北側中央轉運車隊",
+        mapCoords: { x: 695, y: 215, width: 135, height: 185 },
+        heroImage: "20261020_143055.jpg",
+        images: ["20261020_143055.jpg"],
+        substationIds: ["ZONE-07"],
+        titleZh: "不鏽鋼行動檢測轉運與野外試驗支援車隊",
+        titleEn: "MOBILE STAINLESS TELEMETRY & FIELDWORK FLEET",
+        vision: "實驗室機動化中繼樞紐。採用多層醫療級不鏽鋼推車，搭載防震抗干擾量測周邊，隨時將生物力學量測能力投射至各運動場館與國家集訓隊訓練第一線。",
+        equipment: "高負載不鏽鋼推車陣列、行動防震防塵機箱、多插座穩壓電控組件",
+        targetMetrics: "移地整備部署時間 (<15分鐘)、線路抗噪防護性、器材防震結構強度"
+      },
+      {
+        id: "zone-08",
+        code: "ZONE-08",
+        color: "#8b5cf6",
+        locationTag: "東南側諮詢獨立隔屏",
+        mapCoords: { x: 35, y: 45, width: 95, height: 140 },
+        heroImage: "20261020_143105.jpg",
+        images: ["20261020_143105.jpg"],
+        substationIds: ["ZONE-08"],
+        titleZh: "私密防護篩檢與多功能屏風獨立諮詢室",
+        titleEn: "PRIVATE SCREENING & CLINICAL CONSULTATION ALCOVE",
+        vision: "以醫療級折疊隔音屏風圍塑之半獨立隱私空間，提供國家隊選手無干擾的關節活動度篩檢、受傷歷史問診與心理整備，隔離外界視覺與聲音干擾。",
+        equipment: "醫療級折疊吸音抗噪屏風、防護評估專用椅、個案諮詢資料終端",
+        targetMetrics: "環境噪訊隔離度 (>20dB)、選手心理安全感評分、受檢隱私合規性"
+      },
+      {
+        id: "zone-09",
+        code: "ZONE-09",
+        color: "#8b5cf6",
+        locationTag: "東南側理療檢查床",
+        mapCoords: { x: 140, y: 45, width: 95, height: 140 },
+        heroImage: "20261020_143115.jpg",
+        images: ["20261020_143115.jpg"],
+        substationIds: ["ZONE-09"],
+        titleZh: "徒手治療評估與下肢生物力學力線校準床",
+        titleEn: "CLINICAL ASSESSMENT & LOWER-LIMB ALIGNMENT PLINTH",
+        vision: "高規格臨床理療床配置。防護員與醫師在此進行關節被動活動度（PROM）、肌筋膜放鬆及下肢動力鏈力線（Q-Angle 等）精密觸診量測，為力學測試前置守門。",
+        equipment: "高載重物理治療檢查床、下肢擺位楔形墊、數位角度測量儀、關節鬆動帶",
+        targetMetrics: "被動關節活動度 (PROM)、組織張力閾值、下肢力線對齊偏差度"
+      },
+      {
+        id: "zone-10",
+        code: "ZONE-10",
+        color: "#ec4899",
+        locationTag: "東側高頻足壓量測桌",
+        mapCoords: { x: 750, y: 45, width: 105, height: 155 },
+        heroImage: "20261020_143125.jpg",
+        images: ["20261020_143125.jpg"],
+        substationIds: ["ZONE-10"],
+        titleZh: "鞋內高頻足底壓力分佈與動力學研究站",
+        titleEn: "IN-SHOE PLANTAR PRESSURE & GAIT TELEMETRY STATION",
+        vision: "配備德國金標 Novel pedar® 鞋內足壓矩陣系統。量測選手在真實專項運動靴內之動態壓力分佈、壓力中心 (COP) 軌跡，為客製化運動鞋墊與鞋底力學設計提供微觀依據。",
+        equipment: "Novel pedar® 鞋內足底壓力感測系統、高精密抗震收納箱、藍牙高頻傳輸模組",
+        targetMetrics: "局部峰值壓力 (Peak Pressure)、壓力-時間積分 (PTI)、COP 軌跡位移速度"
+      },
+      {
+        id: "zone-11",
+        code: "ZONE-11",
+        color: "#ec4899",
+        locationTag: "東北隅 3D 列印打樣區",
+        mapCoords: { x: 865, y: 45, width: 105, height: 155 },
+        heroImage: "20261020_143144.jpg",
+        images: ["20261020_143144.jpg"],
+        substationIds: ["ZONE-11"],
+        titleZh: "運動科技智慧感測器快速打樣與自研工坊",
+        titleEn: "SPORTS SENSOR RAPID PROTOTYPING & MAKER SPACE",
+        vision: "實驗室硬體自研與穿戴裝置客製化核心。利用 Bambu Lab 封閉式高速 3D 列印機，即時為選手量身打樣高強度輕量化感測器支架、穿戴外殼與生醫輔具配件。",
+        equipment: "Bambu Lab 封閉式高速 3D 列印機、AMS 自動四色供料系統、精密組裝工作墊、快拆套件",
+        targetMetrics: "客製治具列印成型週期 (<4小時)、材料拉伸強度、穿戴輕量化指數 (<30g)"
+      },
+      {
+        id: "zone-12",
+        code: "ZONE-12",
+        color: "#ec4899",
+        locationTag: "東北隅自研工坊長通道",
+        mapCoords: { x: 820, y: 110, width: 158, height: 65 },
+        heroImage: "20261020_143148.jpg",
+        images: ["20261020_143148.jpg"],
+        substationIds: ["ZONE-12"],
+        titleZh: "自研工坊全景視野與長縱深動態量測通道",
+        titleEn: "PROTOTYPING LAB PANORAMA & EXTENDED TEST CORRIDOR",
+        vision: "由智慧感測器自製工坊向外眺望之廣角視角。完整綜覽由角落自研工坊、獨立篩檢隔間、減重步態區延伸至中央 3D 光學動捕挑高試驗場之長縱深全貌與安全隔簾動線。",
+        equipment: "智慧工坊向外全景監控視角、器材收納櫃、長縱深多模態量測通道、挑高安全防護天網",
+        targetMetrics: "全景視覺覆蓋率、多通道感測器同步觸發時延 (<1ms)、長縱深通道銜接性"
+      },
+      {
+        id: "zone-13",
+        code: "ZONE-13",
+        color: "#38bdf8",
+        locationTag: "北側伺服器主機庫",
+        mapCoords: { x: 375, y: 45, width: 115, height: 52 },
+        heroImage: "20261020_143157.jpg",
+        images: ["20261020_143157.jpg"],
+        substationIds: ["ZONE-13"],
+        titleZh: "頂尖動力學感測器庫與高性能運算中樞",
+        titleEn: "HIGH-END KINETICS VAULT & SUPERCOMPUTING SERVER HUB",
+        vision: "核心動力學硬體典藏庫。保管國際金標 AMTI 測力板組件與 Simi 動作分析相機，配置 Supermicro 伺服器與 MSI 工作站，專責大型三維逆動力學（Inverse Dynamics）解算。",
+        equipment: "AMTI 多軸測力板原裝組件、Supermicro 高性能運算伺服器、MSI 深度學習主機、解剖關節模型櫃",
+        targetMetrics: "多軸力向量分辨率 (Fx, Fy, Fz, Mx, My, Mz)、大規模數據批次處理算力、模型擬合度"
+      },
+      {
+        id: "zone-14",
+        code: "ZONE-14",
+        color: "#38bdf8",
+        locationTag: "北側科研應用整合席",
+        mapCoords: { x: 500, y: 45, width: 115, height: 52 },
+        heroImage: "20261020_143210.jpg",
+        images: ["20261020_143210.jpg"],
+        substationIds: ["ZONE-14"],
+        titleZh: "運動生物力學科研應用與數據整合席",
+        titleEn: "APPLIED BIOMECHANICS & DATA INTEGRATION DESK",
+        vision: "國家運動科學中心生物力學科研核心席。專責將受試選手各項動作力學檢測數據與生物力學演算法進行深度整合，轉化為教練與選手可直觀理解之訓練改善指標與科研分析報告。",
+        equipment: "人體脊椎神經骨盆解剖模型、雙螢幕文獻研發工作席、運科數據分析套件、科研文獻資料庫",
+        targetMetrics: "科研數據分析整合完成率、教練與選手報告理解度指標、生物力學改善建議產出數"
+      },
+      {
+        id: "zone-15",
+        code: "ZONE-15",
+        color: "#38bdf8",
+        locationTag: "北側大數據解算席",
+        mapCoords: { x: 625, y: 45, width: 110, height: 52 },
+        heroImage: "20261020_143216.jpg",
+        images: ["20261020_143216.jpg"],
+        substationIds: ["ZONE-15"],
+        titleZh: "多通道運動生物力學大數據解算工作站",
+        titleEn: "MULTI-CHANNEL BIOMECHANICS TELEMETRY & ANALYTICS WORKSTATION",
+        vision: "海量運動科研數據解算大腦。集成肌電（EMG）、IMU、影像、測力板及足壓等多模態訊號，透過演算法進行自動化降噪、特徵提取、動力學建模與報告產出。",
+        equipment: "雙螢幕高解析度科研工作站、高精度相機腳架系統、專業生物力學分析軟體套件、肌群對照儀",
+        targetMetrics: "多源數據時間對齊同步精度、動作特徵自動識別率 (>95%)、自動化報表產出速率"
+      }
+    ];
+
+    const STORAGE_KEY_6 = "tiss_biomech_lab_6zones_v7";
+    const STORAGE_KEY_15 = "tiss_biomech_lab_15stations_v7";
+
+    let currentMode = "6zones"; // '6zones' or '15stations'
+    let activeAreaId = "zone-a"; // Currently selected/active zone
+    let dragState = null; // { type: 'move'|'resize', zoneId, handle, startPt, origCoords }
+
+    function loadData(key, defaults) {
+      let saved = localStorage.getItem(key);
+      let parsed = null;
+      if (saved) {
+        try { parsed = JSON.parse(saved); } catch (e) {}
+      }
+
+      if (parsed && Array.isArray(parsed)) {
+        return defaults.map(def => {
+          const found = parsed.find(p => p.id === def.id);
+          if (found) {
+            const merged = JSON.parse(JSON.stringify(def));
+            // Preserve user customized titles
+            if (found.titleZh) merged.titleZh = found.titleZh;
+            if (found.titleEn) merged.titleEn = found.titleEn;
+            if (found.mapCoords) merged.mapCoords = { ...found.mapCoords };
+            merged.heroImage = def.heroImage;
+            merged.images = [...def.images];
+            merged.substationIds = [...(def.substationIds || [])];
+            return merged;
+          }
+          return JSON.parse(JSON.stringify(def));
+        });
+      }
+      return JSON.parse(JSON.stringify(defaults));
+    }
+
+    let data6 = loadData(STORAGE_KEY_6, SIX_MAJOR_ZONES);
+    let data15 = loadData(STORAGE_KEY_15, FIFTEEN_STATIONS);
+
+    function saveData() {
+      if (currentMode === "6zones") {
+        localStorage.setItem(STORAGE_KEY_6, JSON.stringify(data6));
+      } else {
+        localStorage.setItem(STORAGE_KEY_15, JSON.stringify(data15));
+      }
+    }
+
+    // Switch between 6 Major Zones & 15 Detailed Stations
+    function switchViewMode(mode) {
+      currentMode = mode;
+      document.getElementById("btnMode6").classList.toggle("active", mode === "6zones");
+      document.getElementById("btnMode15").classList.toggle("active", mode === "15stations");
+      document.getElementById("modeLabelText").innerText = mode === "6zones" ? "6 大主力專區 (6 Major Core Zones)" : "15 個細部站點 (15 Detailed Stations)";
+      
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      activeAreaId = currentDataset[0].id;
+
+      renderMapZones();
+      renderCards();
+    }
+
+    // SVG Coordinate Mapping
+    function getSvgPoint(evt) {
+      const svg = document.getElementById("labFloorPlanSvg");
+      if (!svg) return { x: 0, y: 0 };
+      const pt = svg.createSVGPoint();
+      pt.x = evt.clientX;
+      pt.y = evt.clientY;
+      return pt.matrixTransform(svg.getScreenCTM().inverse());
+    }
+
+    // Format zone title into 1 or 2 lines
+    function formatZoneTitleHtml(title, width) {
+      if (!title) return '';
+      const charsPerLine = Math.max(6, Math.floor(width / 15));
+      if (title.length <= charsPerLine) {
+        return `<tspan x="0" dy="0">${escapeHtml(title)}</tspan>`;
+      }
+      const l1 = title.slice(0, charsPerLine);
+      let l2 = title.slice(charsPerLine);
+      if (l2.length > charsPerLine) {
+        l2 = l2.slice(0, charsPerLine - 1) + '…';
+      }
+      return `<tspan x="0" dy="0">${escapeHtml(l1)}</tspan><tspan x="0" dy="16">${escapeHtml(l2)}</tspan>`;
+    }
+
+    // Render Dynamic Map Zones
+    function renderMapZones() {
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const zonesLayer = document.getElementById("mapZonesLayer");
+      const legendContainer = document.getElementById("mapLegendContainer");
+      if (!zonesLayer) return;
+
+      zonesLayer.innerHTML = "";
+      if (legendContainer) legendContainer.innerHTML = "";
+
+      currentDataset.forEach(item => {
+        const c = item.mapCoords || { x: 50, y: 50, width: 200, height: 120 };
+        const isSelected = (item.id === activeAreaId);
+
+        // Legend Item
+        if (legendContainer) {
+          const legItem = document.createElement("div");
+          legItem.className = "legend-item";
+          legItem.id = `legend-${item.id}`;
+          legItem.onclick = () => selectActiveZone(item.id, true);
+          legItem.innerHTML = `<span class="legend-dot" style="background:${item.color};"></span> <span id="leg-title-${item.id}">${item.code}: ${escapeHtml(item.titleZh)}</span>`;
+          legendContainer.appendChild(legItem);
+        }
+
+        // Zone Group
+        const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        g.setAttribute("class", `map-zone-group ${isSelected ? 'selected' : ''}`);
+        g.setAttribute("id", `svg-zone-${item.id}`);
+        g.setAttribute("data-zone-id", item.id);
+        g.setAttribute("data-color", item.color);
+        g.onmousedown = (e) => onZoneMouseDown(item.id, e);
+        g.ondblclick = (e) => onZoneDblClick(item.id, e);
+
+        // Badge Width
+        const badgeW = Math.min(76, Math.max(50, c.width - 24));
+
+        let innerExtraHtml = "";
+        if (item.id === "zone-a") {
+          innerExtraHtml = `
+            <rect id="runway-zone-a" x="${c.x + c.width * 0.12}" y="${c.y + c.height * 0.32}" 
+              width="${c.width * 0.76}" height="${c.height * 0.44}" rx="5" 
+              fill="rgba(2, 132, 199, 0.22)" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 2" pointer-events="none"/>
+            <text id="runway-text-a" x="${c.x + c.width * 0.5}" y="${c.y + c.height * 0.55}" fill="#38bdf8" font-size="10" text-anchor="middle" pointer-events="none">3D 跑道 & 測力板</text>
+          `;
+        }
+
+        g.innerHTML = `
+          <!-- Main Zone Body -->
+          <rect class="zone-bg" id="rect-${item.id}" x="${c.x}" y="${c.y}" width="${c.width}" height="${c.height}" rx="8"
+            fill="${item.color}" fill-opacity="${isSelected ? 0.26 : 0.14}" 
+            stroke="${isSelected ? '#00f0ff' : item.color}" stroke-width="${isSelected ? 2.5 : 1.5}" 
+            stroke-dasharray="${item.id === 'zone-e' ? '4 2' : 'none'}" />
+
+          <!-- Internal decorations -->
+          ${innerExtraHtml}
+
+          <!-- Badge -->
+          <rect id="badge-bg-${item.id}" x="${c.x + 10}" y="${c.y + 10}" width="${badgeW}" height="22" rx="4"
+            fill="${item.color}" fill-opacity="0.85" pointer-events="none"/>
+          <text id="badge-text-${item.id}" x="${c.x + 10 + badgeW / 2}" y="${c.y + 25}" 
+            fill="#030712" font-size="12" font-family="Rajdhani" font-weight="800" text-anchor="middle" pointer-events="none">${item.code}</text>
+
+          <!-- Edit Pencil Icon -->
+          <g class="zone-pencil-btn" id="pencil-${item.id}" transform="translate(${c.x + badgeW + 16}, ${c.y + 12})" 
+            onclick="startEditingZoneTitle('${item.id}', event)" title="點此直接編輯區域名稱">
+            <rect width="18" height="18" rx="3" fill="rgba(15, 23, 42, 0.7)" stroke="${item.color}" stroke-width="1"/>
+            <path d="M4 14l2-0.5 7-7-1.5-1.5-7 7L4 14z" fill="${item.color}"/>
+            <path d="M11 6l1.5 1.5" stroke="#ffffff" stroke-width="1"/>
+          </g>
+
+          <!-- Drag Hint Tag -->
+          <text id="drag-hint-${item.id}" x="${c.x + c.width - 10}" y="${c.y + 24}" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="end" pointer-events="none">⠿ 拖曳/縮放</text>
+
+          <!-- Zone Title Text -->
+          <text class="zone-title" id="svg-title-${item.id}" transform="translate(${c.x + 12}, ${c.y + 50})" 
+            fill="#ffffff" font-size="12.5" font-weight="700" pointer-events="none">
+            ${formatZoneTitleHtml(item.titleZh, c.width)}
+          </text>
+
+          <!-- Sub Location / Spec preview -->
+          <text class="zone-meta" id="svg-meta-${item.id}" x="${c.x + 12}" y="${c.y + (c.height > 95 ? 74 : 66)}" 
+            fill="#94a3b8" font-size="9.5" pointer-events="none" style="${c.height < 70 ? 'display:none;' : ''}">
+            ${escapeHtml(item.locationTag || '')}
+          </text>
+
+          <!-- Size Dims -->
+          <text class="zone-dims" id="svg-dims-${item.id}" x="${c.x + c.width - 8}" y="${c.y + c.height - 8}" 
+            fill="rgba(255,255,255,0.35)" font-size="9" font-family="Rajdhani" text-anchor="end" pointer-events="none">
+            ${Math.round(c.width)} × ${Math.round(c.height)}
+          </text>
+        `;
+
+        zonesLayer.appendChild(g);
+      });
+
+      renderHandlesLayer();
+      updateToolbarInfo();
+    }
+
+    // Render Resize Handles & Selection Outline
+    function renderHandlesLayer() {
+      const handlesLayer = document.getElementById("mapHandlesLayer");
+      if (!handlesLayer) return;
+      handlesLayer.innerHTML = "";
+
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const item = currentDataset.find(d => d.id === activeAreaId);
+      if (!item || !item.mapCoords) return;
+      const c = item.mapCoords;
+
+      // Selection outline
+      const outline = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      outline.setAttribute("id", "selectionOutline");
+      outline.setAttribute("x", c.x - 2);
+      outline.setAttribute("y", c.y - 2);
+      outline.setAttribute("width", c.width + 4);
+      outline.setAttribute("height", c.height + 4);
+      outline.setAttribute("rx", "9");
+      outline.setAttribute("fill", "none");
+      outline.setAttribute("stroke", "#00f0ff");
+      outline.setAttribute("stroke-width", "1.6");
+      outline.setAttribute("stroke-dasharray", "4 3");
+      outline.setAttribute("pointer-events", "none");
+      handlesLayer.appendChild(outline);
+
+      // 4 Corner Square Handles ("Squared of the area")
+      const handles = [
+        { type: "nw", x: c.x - 6, y: c.y - 6, class: "handle-nw" },
+        { type: "ne", x: c.x + c.width - 6, y: c.y - 6, class: "handle-ne" },
+        { type: "se", x: c.x + c.width - 6, y: c.y + c.height - 6, class: "handle-se" },
+        { type: "sw", x: c.x - 6, y: c.y + c.height - 6, class: "handle-sw" }
+      ];
+
+      handles.forEach(h => {
+        const sq = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        sq.setAttribute("id", `handle-${h.type}`);
+        sq.setAttribute("class", `resize-handle ${h.class}`);
+        sq.setAttribute("x", h.x);
+        sq.setAttribute("y", h.y);
+        sq.setAttribute("width", "12");
+        sq.setAttribute("height", "12");
+        sq.setAttribute("rx", "2");
+        sq.setAttribute("data-handle", h.type);
+        sq.setAttribute("data-zone", item.id);
+        sq.onmousedown = (e) => onHandleMouseDown(item.id, h.type, e);
+        handlesLayer.appendChild(sq);
+      });
+    }
+
+    // Live update of SVG attributes during dragging / resizing without DOM destruction
+    function updateZoneSvgLive(item) {
+      const c = item.mapCoords;
+      const rect = document.getElementById(`rect-${item.id}`);
+      if (rect) {
+        rect.setAttribute("x", c.x);
+        rect.setAttribute("y", c.y);
+        rect.setAttribute("width", c.width);
+        rect.setAttribute("height", c.height);
+      }
+
+      const badgeW = Math.min(76, Math.max(50, c.width - 24));
+      const badgeBg = document.getElementById(`badge-bg-${item.id}`);
+      if (badgeBg) {
+        badgeBg.setAttribute("x", c.x + 10);
+        badgeBg.setAttribute("y", c.y + 10);
+        badgeBg.setAttribute("width", badgeW);
+      }
+      const badgeText = document.getElementById(`badge-text-${item.id}`);
+      if (badgeText) {
+        badgeText.setAttribute("x", c.x + 10 + badgeW / 2);
+        badgeText.setAttribute("y", c.y + 25);
+      }
+
+      const pencil = document.getElementById(`pencil-${item.id}`);
+      if (pencil) {
+        pencil.setAttribute("transform", `translate(${c.x + badgeW + 16}, ${c.y + 12})`);
+      }
+
+      const dragHint = document.getElementById(`drag-hint-${item.id}`);
+      if (dragHint) {
+        dragHint.setAttribute("x", c.x + c.width - 10);
+        dragHint.setAttribute("y", c.y + 24);
+      }
+
+      const titleEl = document.getElementById(`svg-title-${item.id}`);
+      if (titleEl) {
+        titleEl.setAttribute("transform", `translate(${c.x + 12}, ${c.y + 50})`);
+        titleEl.innerHTML = formatZoneTitleHtml(item.titleZh, c.width);
+      }
+
+      const metaEl = document.getElementById(`svg-meta-${item.id}`);
+      if (metaEl) {
+        metaEl.setAttribute("x", c.x + 12);
+        metaEl.setAttribute("y", c.y + (c.height > 95 ? 74 : 66));
+        metaEl.style.display = (c.height < 70) ? "none" : "";
+      }
+
+      const dimsEl = document.getElementById(`svg-dims-${item.id}`);
+      if (dimsEl) {
+        dimsEl.setAttribute("x", c.x + c.width - 8);
+        dimsEl.setAttribute("y", c.y + c.height - 8);
+        dimsEl.textContent = `${Math.round(c.width)} × ${Math.round(c.height)}`;
+      }
+
+      if (item.id === "zone-a") {
+        const runway = document.getElementById("runway-zone-a");
+        const rwText = document.getElementById("runway-text-a");
+        if (runway) {
+          runway.setAttribute("x", c.x + c.width * 0.12);
+          runway.setAttribute("y", c.y + c.height * 0.32);
+          runway.setAttribute("width", c.width * 0.76);
+          runway.setAttribute("height", c.height * 0.44);
+        }
+        if (rwText) {
+          rwText.setAttribute("x", c.x + c.width * 0.5);
+          rwText.setAttribute("y", c.y + c.height * 0.55);
+        }
+      }
+
+      // Update Selection Outline & Handles
+      const outline = document.getElementById("selectionOutline");
+      if (outline) {
+        outline.setAttribute("x", c.x - 2);
+        outline.setAttribute("y", c.y - 2);
+        outline.setAttribute("width", c.width + 4);
+        outline.setAttribute("height", c.height + 4);
+      }
+
+      const hNW = document.getElementById("handle-nw");
+      const hNE = document.getElementById("handle-ne");
+      const hSE = document.getElementById("handle-se");
+      const hSW = document.getElementById("handle-sw");
+      if (hNW) { hNW.setAttribute("x", c.x - 6); hNW.setAttribute("y", c.y - 6); }
+      if (hNE) { hNE.setAttribute("x", c.x + c.width - 6); hNE.setAttribute("y", c.y - 6); }
+      if (hSE) { hSE.setAttribute("x", c.x + c.width - 6); hSE.setAttribute("y", c.y + c.height - 6); }
+      if (hSW) { hSW.setAttribute("x", c.x - 6); hSW.setAttribute("y", c.y + c.height - 6); }
+
+      // Update Toolbar Coords Badge
+      const coordsBadge = document.getElementById("mapCoordsBadge");
+      if (coordsBadge) {
+        coordsBadge.textContent = `X: ${c.x} · Y: ${c.y} | ${c.width} × ${c.height} px`;
+      }
+    }
+
+    // Select Active Zone and Update UI
+    function selectActiveZone(zoneId, shouldScroll = false) {
+      activeAreaId = zoneId;
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const item = currentDataset.find(d => d.id === zoneId);
+      if (!item) return;
+
+      updateToolbarInfo(item);
+      renderHandlesLayer();
+
+      // Update styling of zones
+      document.querySelectorAll(".map-zone-group").forEach(el => {
+        const isCurrent = (el.getAttribute("data-zone-id") === zoneId);
+        el.classList.toggle("selected", isCurrent);
+        const bg = el.querySelector(".zone-bg");
+        if (bg) {
+          bg.setAttribute("stroke", isCurrent ? "#00f0ff" : (el.getAttribute("data-color") || "#38bdf8"));
+          bg.setAttribute("stroke-width", isCurrent ? "2.5" : "1.5");
+          bg.setAttribute("fill-opacity", isCurrent ? "0.26" : "0.14");
+        }
+      });
+
+      if (shouldScroll) {
+        scrollToCard(zoneId);
+      }
+    }
+
+    // Update Toolbar Display
+    function updateToolbarInfo(item) {
+      if (!item) {
+        const currentDataset = (currentMode === "6zones") ? data6 : data15;
+        item = currentDataset.find(d => d.id === activeAreaId) || currentDataset[0];
+      }
+      if (!item) return;
+
+      const dot = document.getElementById("mapActiveDot");
+      const code = document.getElementById("mapActiveCode");
+      const input = document.getElementById("mapActiveTitleInput");
+      const coords = document.getElementById("mapCoordsBadge");
+      const headerCode = document.getElementById("headerActiveCode");
+      const toolbarCode = document.getElementById("toolbarActiveCode");
+
+      if (dot) dot.style.background = item.color;
+      if (code) code.innerText = item.code;
+      if (headerCode) headerCode.innerText = item.code;
+      if (toolbarCode) toolbarCode.innerText = item.code;
+      if (input && input.value !== item.titleZh) input.value = item.titleZh;
+      if (coords && item.mapCoords) {
+        coords.innerText = `X: ${item.mapCoords.x} · Y: ${item.mapCoords.y} | ${item.mapCoords.width} × ${item.mapCoords.height} px`;
+      }
+    }
+
+    // Update legend titles dynamically
+    function updateLegendTitles() {
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      currentDataset.forEach(item => {
+        const legText = document.getElementById(`leg-title-${item.id}`);
+        if (legText) {
+          legText.textContent = `${item.code}: ${item.titleZh}`;
+        }
+      });
+    }
+
+    // Mouse Down on Zone (Drag & Move)
+    function onZoneMouseDown(zoneId, evt) {
+      if (evt.target.classList.contains("resize-handle") || evt.target.closest(".zone-pencil-btn")) {
+        return;
+      }
+      evt.preventDefault();
+      selectActiveZone(zoneId);
+
+      const pt = getSvgPoint(evt);
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const item = currentDataset.find(d => d.id === zoneId);
+      if (!item) return;
+
+      dragState = {
+        type: "move",
+        zoneId: zoneId,
+        startPt: pt,
+        origCoords: { ...item.mapCoords }
+      };
+
+      const grp = document.getElementById(`svg-zone-${zoneId}`);
+      if (grp) grp.classList.add("dragging");
+    }
+
+    // Mouse Down on Corner Resize Handle
+    function onHandleMouseDown(zoneId, handle, evt) {
+      evt.stopPropagation();
+      evt.preventDefault();
+      selectActiveZone(zoneId);
+
+      const pt = getSvgPoint(evt);
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const item = currentDataset.find(d => d.id === zoneId);
+      if (!item) return;
+
+      dragState = {
+        type: "resize",
+        zoneId: zoneId,
+        handle: handle,
+        startPt: pt,
+        origCoords: { ...item.mapCoords }
+      };
+    }
+
+    // Global Mouse Move for Smooth Dragging & Resizing
+    window.addEventListener("mousemove", (evt) => {
+      if (!dragState) return;
+
+      const pt = getSvgPoint(evt);
+      const dx = pt.x - dragState.startPt.x;
+      const dy = pt.y - dragState.startPt.y;
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const item = currentDataset.find(d => d.id === dragState.zoneId);
+      if (!item) return;
+
+      const orig = dragState.origCoords;
+
+      if (dragState.type === "move") {
+        let newX = Math.round(orig.x + dx);
+        let newY = Math.round(orig.y + dy);
+
+        // Clamping inside SVG canvas bounds
+        newX = Math.max(15, Math.min(newX, 985 - item.mapCoords.width));
+        newY = Math.max(35, Math.min(newY, 435 - item.mapCoords.height));
+
+        item.mapCoords.x = newX;
+        item.mapCoords.y = newY;
+        updateZoneSvgLive(item);
+      } else if (dragState.type === "resize") {
+        const handle = dragState.handle;
+        let newX = orig.x;
+        let newY = orig.y;
+        let newW = orig.width;
+        let newH = orig.height;
+
+        if (handle === "se") {
+          newW = Math.max(70, orig.width + dx);
+          newH = Math.max(45, orig.height + dy);
+          newW = Math.min(newW, 985 - orig.x);
+          newH = Math.min(newH, 435 - orig.y);
+        } else if (handle === "ne") {
+          newW = Math.max(70, orig.width + dx);
+          newH = Math.max(45, orig.height - dy);
+          newW = Math.min(newW, 985 - orig.x);
+          newY = orig.y + (orig.height - newH);
+          if (newY < 35) {
+            newH = orig.y + orig.height - 35;
+            newY = 35;
+          }
+        } else if (handle === "sw") {
+          newW = Math.max(70, orig.width - dx);
+          newH = Math.max(45, orig.height + dy);
+          newH = Math.min(newH, 435 - orig.y);
+          newX = orig.x + (orig.width - newW);
+          if (newX < 15) {
+            newW = orig.x + orig.width - 15;
+            newX = 15;
+          }
+        } else if (handle === "nw") {
+          newW = Math.max(70, orig.width - dx);
+          newH = Math.max(45, orig.height - dy);
+          newX = orig.x + (orig.width - newW);
+          newY = orig.y + (orig.height - newH);
+          if (newX < 15) {
+            newW = orig.x + orig.width - 15;
+            newX = 15;
+          }
+          if (newY < 35) {
+            newH = orig.y + orig.height - 35;
+            newY = 35;
+          }
+        }
+
+        item.mapCoords.x = Math.round(newX);
+        item.mapCoords.y = Math.round(newY);
+        item.mapCoords.width = Math.round(newW);
+        item.mapCoords.height = Math.round(newH);
+        updateZoneSvgLive(item);
+      }
+    });
+
+    // Global Mouse Up (Commit Drag State & Save)
+    window.addEventListener("mouseup", () => {
+      if (dragState) {
+        document.querySelectorAll(".map-zone-group").forEach(g => g.classList.remove("dragging"));
+        saveData();
+        dragState = null;
+      }
+    });
+
+    // Double Click on Zone -> Direct focus on title input
+    function onZoneDblClick(zoneId, evt) {
+      evt.preventDefault();
+      selectActiveZone(zoneId);
+      const input = document.getElementById("mapActiveTitleInput");
+      if (input) {
+        input.focus();
+        input.select();
+      }
+    }
+
+    // Pencil Click on Zone -> Focus on title input
+    function startEditingZoneTitle(zoneId, evt) {
+      evt.stopPropagation();
+      selectActiveZone(zoneId);
+      const input = document.getElementById("mapActiveTitleInput");
+      if (input) {
+        input.focus();
+        input.select();
+      }
+    }
+
+    // MUTUAL INTERACTION: When Title is edited in Map Toolbar
+    function onMapTitleEditorInput(value) {
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+      const target = currentDataset.find(d => d.id === activeAreaId);
+      if (!target) return;
+
+      target.titleZh = value;
+      saveData();
+
+      // 1. Update text on SVG map
+      const titleEl = document.getElementById(`svg-title-${target.id}`);
+      if (titleEl) {
+        titleEl.innerHTML = formatZoneTitleHtml(value, target.mapCoords.width);
+      }
+
+      // 2. Update figure input in card below
+      const cardInput = document.querySelector(`#card-${target.id} .input-title-zh`);
+      if (cardInput && cardInput.value !== value) {
+        cardInput.value = value;
+        autoResizeTitle(cardInput);
+      }
+
+      // 3. Update hero image alt text
+      const hero = document.getElementById(`hero-img-${target.id}`);
+      if (hero) hero.alt = value;
+
+      // 4. Update legend
+      updateLegendTitles();
+
+      // Flash save indicator
+      flashSaveIndicator(target.id);
+    }
+
+    // Reset Map Coordinates Only (Preserves user text/specs)
+    function resetMapCoordinates() {
+      if (confirm("確定要將當前視角的所有專區位置與尺寸還原至預設佈局嗎？（保留您所修改的文字內容）")) {
+        const defaults = (currentMode === "6zones") ? SIX_MAJOR_ZONES : FIFTEEN_STATIONS;
+        const dataset = (currentMode === "6zones") ? data6 : data15;
+        dataset.forEach(item => {
+          const def = defaults.find(d => d.id === item.id);
+          if (def && def.mapCoords) {
+            item.mapCoords = { ...def.mapCoords };
+          }
+        });
+        saveData();
+        renderMapZones();
+      }
+    }
+
+    // Render Cards
+    function renderCards() {
+      const container = document.getElementById("cardsGrid");
+      container.innerHTML = "";
+
+      const currentDataset = (currentMode === "6zones") ? data6 : data15;
+
+      currentDataset.forEach((item) => {
+        const card = document.createElement("div");
+        card.className = "area-card";
+        card.id = `card-${item.id}`;
+
+        // Build thumbnail strip if multiple images exist
+        let thumbsHtml = "";
+        if (item.images && item.images.length > 1) {
+          thumbsHtml = `<div class="media-thumbnails-strip">`;
+          item.images.forEach(img => {
+            thumbsHtml += `
+              <div class="thumb-item ${img === item.heroImage ? 'active' : ''}" 
+                onclick="setCardHeroImage('${item.id}', '${img}', this)">
+                <img src="./${img}" alt="thumb">
+              </div>
+            `;
+          });
+          thumbsHtml += `</div>`;
+        }
+
+        // Sub-stations badges for 6 zones
+        let substationsHtml = "";
+        if (item.substationIds && item.substationIds.length > 1) {
+          substationsHtml = `
+            <div class="substations-pills">
+              <span class="substations-label">包含站點：</span>
+              ${item.substationIds.map(sid => `<span class="substation-badge">${sid}</span>`).join('')}
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <!-- Print Sign Header (Visible only when printed) -->
+          <div class="print-sign-header">
+            <div>
+              <h3>國家運動科學中心 · 運動生物力學實驗室</h3>
+              <span>NATIONAL SPORTS SCIENCE CENTER (TISS) · BIOMECHANICS LAB</span>
+            </div>
+            <div style="font-family:'Rajdhani',sans-serif; font-weight:800; font-size:1.5rem; color:#0284c7;">
+              ${item.code}
+            </div>
+          </div>
+
+          <!-- Left Media Area -->
+          <div class="card-media">
+            <div class="media-hero-img-wrap" onclick="openImageModal('./${item.heroImage}')">
+              <img id="hero-img-${item.id}" class="media-hero-img" src="./${item.heroImage}" alt="${item.titleZh}">
+              <div class="media-overlay-zone">
+                <span class="media-zone-code">${item.code}</span>
+                <span class="media-location-tag">${item.locationTag}</span>
+              </div>
+            </div>
+            ${thumbsHtml}
+          </div>
+
+          <!-- Right Content & Live Inputs -->
+          <div class="card-content">
+            <div class="card-header-row">
+              <div class="title-edit-container">
+                <div class="editable-label">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  功能區域名稱 (點擊直接更名)
+                </div>
+                <textarea class="input-title-zh" rows="2" 
+                  oninput="autoResizeTitle(this); updateField('${item.id}', 'titleZh', this.value)" 
+                  placeholder="輸入繁體中文區域名稱...">${escapeHtml(item.titleZh)}</textarea>
+                <input type="text" class="input-title-en" value="${escapeHtml(item.titleEn)}" 
+                  oninput="updateField('${item.id}', 'titleEn', this.value)" placeholder="INPUT ENGLISH SUBTITLE...">
+              </div>
+            </div>
+
+            ${substationsHtml}
+
+            <!-- Vision Statement (Conceptual Dreaming Functionality) -->
+            <div class="detail-block">
+              <div class="detail-block-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                核心功能定位與宣傳展示願景 (PROMOTIONAL VISION)
+              </div>
+              <textarea class="textarea-vision" rows="2" 
+                oninput="updateField('${item.id}', 'vision', this.value)">${escapeHtml(item.vision)}</textarea>
+            </div>
+
+            <!-- Key Equipment and Specs -->
+            <div class="equipment-row">
+              <div class="spec-box">
+                <div class="spec-header">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                  主要儀器與核心技術
+                </div>
+                <input type="text" class="input-spec-text" value="${escapeHtml(item.equipment)}" 
+                  oninput="updateField('${item.id}', 'equipment', this.value)">
+              </div>
+              <div class="spec-box">
+                <div class="spec-header">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  關鍵量測指標與科學服務
+                </div>
+                <input type="text" class="input-spec-text" value="${escapeHtml(item.targetMetrics)}" 
+                  oninput="updateField('${item.id}', 'targetMetrics', this.value)">
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="card-footer">
+              <span>區域編號: <strong style="color:var(--cyan);">${item.code}</strong> · 空間座向: <code>${item.locationTag}</code></span>
+              <span class="save-indicator" id="indicator-${item.id}">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                已自動存檔
+              </span>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      // Auto-fit title textareas height
+      document.querySelectorAll(".input-title-zh").forEach(autoResizeTitle);
+    }
+
+    // Auto-resize title textarea to fit content cleanly in 1 or 2 lines
+    function autoResizeTitle(el) {
+      if (!el) return;
+      el.style.height = "auto";
+      el.style.height = Math.max(64, el.scrollHeight) + "px";
+    }
+
+    // Update field value with mutual real-time reflection to SVG map
+    function updateField(id, field, value) {
+      const dataset = (currentMode === "6zones") ? data6 : data15;
+      const target = dataset.find(d => d.id === id);
+      if (target) {
+        target[field] = value;
+        saveData();
+
+        if (field === "titleZh") {
+          // 1. Update text on SVG map
+          const titleEl = document.getElementById(`svg-title-${id}`);
+          if (titleEl) {
+            titleEl.innerHTML = formatZoneTitleHtml(value, target.mapCoords ? target.mapCoords.width : 200);
+          }
+
+          // 2. If this is the active zone on the map, update map toolbar editor
+          if (id === activeAreaId) {
+            const mapInput = document.getElementById("mapActiveTitleInput");
+            if (mapInput && mapInput.value !== value) {
+              mapInput.value = value;
+            }
+          }
+
+          // 3. Update hero image alt
+          const hero = document.getElementById(`hero-img-${id}`);
+          if (hero) hero.alt = value;
+
+          // 4. Update legend
+          updateLegendTitles();
+        }
+
+        // Flash saved indicator
+        const ind = document.getElementById(`indicator-${id}`);
+        if (ind) {
+          ind.classList.add("show");
+          clearTimeout(ind._timer);
+          ind._timer = setTimeout(() => { ind.classList.remove("show"); }, 1500);
+        }
+      }
+    }
+
+    // Set Card Hero Image from Thumbnails
+    function setCardHeroImage(cardId, imgSrc, thumbElement) {
+      const hero = document.getElementById(`hero-img-${cardId}`);
+      if (hero) hero.src = `./${imgSrc}`;
+      
+      const parent = thumbElement.parentElement;
+      parent.querySelectorAll(".thumb-item").forEach(t => t.classList.remove("active"));
+      thumbElement.classList.add("active");
+
+      // Update in data
+      const dataset = (currentMode === "6zones") ? data6 : data15;
+      const target = dataset.find(d => d.id === cardId);
+      if (target) {
+        target.heroImage = imgSrc;
+        saveData();
+      }
+    }
+
+    // Scroll to Card and Flash Highlight Ring
+    function scrollToCard(id) {
+      // If currently in 15 stations mode, switch back to 6 zones mode if it's zone-a~f
+      if (id.startsWith("zone-") && id.length === 6 && currentMode !== "6zones") {
+        switchViewMode("6zones");
+      }
+      
+      setTimeout(() => {
+        const card = document.getElementById(`card-${id}`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.classList.add("highlighted");
+          setTimeout(() => {
+            card.classList.remove("highlighted");
+          }, 2400);
+        }
+      }, 50);
+    }
+
+    // Print Single Area Sign
+    function printSingleArea(id) {
+      const allCards = document.querySelectorAll(".area-card");
+      allCards.forEach(c => {
+        if (c.id !== `card-${id}`) {
+          c.style.display = "none";
+        }
+      });
+      window.print();
+      allCards.forEach(c => {
+        c.style.display = "";
+      });
+    }
+
+    // Reset Defaults
+    function resetToDefaults() {
+      if (confirm(`確定要將當前視角的所有設定（包含名稱與地圖佈局）還原為官方建議預設值嗎？`)) {
+        if (currentMode === "6zones") {
+          data6 = JSON.parse(JSON.stringify(SIX_MAJOR_ZONES));
+          localStorage.removeItem(STORAGE_KEY_6);
+        } else {
+          data15 = JSON.parse(JSON.stringify(FIFTEEN_STATIONS));
+          localStorage.removeItem(STORAGE_KEY_15);
+        }
+        renderMapZones();
+        renderCards();
+      }
+    }
+
+    // Entrance Path Animation & Highlight
+    function highlightEntrancePath() {
+      const lines = document.querySelectorAll('.flow-path-line');
+      lines.forEach(l => l.classList.add('flow-path-highlight'));
+
+      // Show toast notice
+      const existingToast = document.querySelector('.save-toast');
+      if (existingToast) existingToast.remove();
+
+      const toast = document.createElement('div');
+      toast.className = 'save-toast';
+      toast.style.background = 'linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(2, 132, 199, 0.95))';
+      toast.style.borderColor = '#34d399';
+      toast.innerHTML = `
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="color:#34d399; font-size:1.15rem;">➔</span>
+          <div>
+            <strong>實驗室入口動線 (Main Access Path)</strong>
+            <div style="font-size:0.75rem; color:#e2e8f0; font-weight:400;">
+              選手與訪客由正南側入口進入，依順時針方位引導：西側 A 區 (3D動捕測試評估區) ➔ 北側 B 區 (等速多關節評估區) ➔ 東北側 C 區 (科研大數據創新區) ➔ 東北隅 D 區 (感測器雛型自製工坊區) ➔ 東南側 E 區 (運動表現足部功能評估區) ➔ 南側 F 區 (智能減重步態區)！
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.classList.add('show'), 20);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        lines.forEach(l => l.classList.remove('flow-path-highlight'));
+        setTimeout(() => toast.remove(), 400);
+      }, 3500);
+    }
+
+    // Export Data JSON
+    function exportDataJSON() {
+      const exportPayload = {
+        mode: currentMode,
+        timestamp: new Date().toISOString(),
+        sixMajorZones: data6,
+        fifteenStations: data15
+      };
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportPayload, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `TISS_Biomech_Lab_Layout_${currentMode}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    // Modal Image
+    function openImageModal(src) {
+      const modal = document.getElementById("imageModal");
+      const img = document.getElementById("modalImg");
+      img.src = src;
+      modal.classList.add("active");
+    }
+
+    function closeImageModal() {
+      document.getElementById("imageModal").classList.remove("active");
+    }
+
+    function escapeHtml(str) {
+      if (!str) return "";
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+
+    // Initialize
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", () => {
+        renderMapZones();
+        renderCards();
+      });
+    } else {
+      renderMapZones();
+      renderCards();
+    }
+  </script>
+</body>
+</html>
